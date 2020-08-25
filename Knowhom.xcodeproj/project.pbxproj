@@ -3,17 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DFC988FE8633A980CAB30DD /* Pods_KnowhomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE653E2462E980E6866E233 /* Pods_KnowhomTests.framework */; };
 		3FD04E8524F53A140002DE82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04E8424F53A140002DE82 /* AppDelegate.swift */; };
 		3FD04E8724F53A140002DE82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04E8624F53A140002DE82 /* ViewController.swift */; };
-		3FD04E8A24F53A140002DE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04E8824F53A140002DE82 /* Main.storyboard */; };
-		3FD04E8C24F53A160002DE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04E8B24F53A160002DE82 /* Assets.xcassets */; };
-		3FD04E8F24F53A160002DE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04E8D24F53A160002DE82 /* LaunchScreen.storyboard */; };
 		3FD04E9A24F53A160002DE82 /* KnowhomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04E9924F53A160002DE82 /* KnowhomTests.swift */; };
 		3FD04EA524F53A160002DE82 /* KnowhomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EA424F53A160002DE82 /* KnowhomUITests.swift */; };
+		3FD04EB324F53A5D0002DE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04EB224F53A5D0002DE82 /* LaunchScreen.storyboard */; };
+		3FD04EB524F53A620002DE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04EB424F53A620002DE82 /* Main.storyboard */; };
+		3FD04EB724F53A7E0002DE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04EB624F53A7D0002DE82 /* Assets.xcassets */; };
+		3FD04EB924F53A910002DE82 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EB824F53A910002DE82 /* SignupViewController.swift */; };
+		3FD04EBB24F53A9D0002DE82 /* QRcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EBA24F53A9D0002DE82 /* QRcodeViewController.swift */; };
+		3FD04EBD24F53AA40002DE82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EBC24F53AA30002DE82 /* LoginViewController.swift */; };
+		3FD04EBF24F53AAD0002DE82 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EBE24F53AAC0002DE82 /* CellTableViewCell.swift */; };
+		3FD04EC124F53AB20002DE82 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EC024F53AB20002DE82 /* CameraViewController.swift */; };
+		3FD04EC324F53ABC0002DE82 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EC224F53ABC0002DE82 /* AddressViewController.swift */; };
+		3FD04EC524F53AC30002DE82 /* AddressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EC424F53AC30002DE82 /* AddressDetailViewController.swift */; };
+		3FD04EC724F53AC80002DE82 /* AddressDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EC624F53AC80002DE82 /* AddressDetailTableViewCell.swift */; };
+		3FD04EC924F53BB50002DE82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04EC824F53BB50002DE82 /* GoogleService-Info.plist */; };
+		3FD04ECB24F54AF50002DE82 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04ECA24F54AF40002DE82 /* ProfileViewController.swift */; };
+		493B36066D9CED770E052EE0 /* Pods_Knowhom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFCAF338DD592F7E4CF49C8 /* Pods_Knowhom.framework */; };
+		4A4E0CDE5EEC206AF65E87B1 /* Pods_Knowhom_KnowhomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFFD509FABDD97133E9C6C2 /* Pods_Knowhom_KnowhomUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06FB1FCA3B04D5DF502685A4 /* Pods-Knowhom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knowhom.release.xcconfig"; path = "Target Support Files/Pods-Knowhom/Pods-Knowhom.release.xcconfig"; sourceTree = "<group>"; };
+		1EA52086B4FF846C31ECE5C3 /* Pods-Knowhom-KnowhomUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knowhom-KnowhomUITests.release.xcconfig"; path = "Target Support Files/Pods-Knowhom-KnowhomUITests/Pods-Knowhom-KnowhomUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1EE653E2462E980E6866E233 /* Pods_KnowhomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowhomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFFD509FABDD97133E9C6C2 /* Pods_Knowhom_KnowhomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knowhom_KnowhomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFCAF338DD592F7E4CF49C8 /* Pods_Knowhom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knowhom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD04E8124F53A140002DE82 /* Knowhom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knowhom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD04E8424F53A140002DE82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD04E8624F53A140002DE82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3FD04E8924F53A140002DE82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3FD04E8B24F53A160002DE82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FD04E8E24F53A160002DE82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD04E9024F53A160002DE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD04E9524F53A160002DE82 /* KnowhomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowhomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD04E9924F53A160002DE82 /* KnowhomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowhomTests.swift; sourceTree = "<group>"; };
@@ -47,6 +62,23 @@
 		3FD04EA024F53A160002DE82 /* KnowhomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowhomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD04EA424F53A160002DE82 /* KnowhomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowhomUITests.swift; sourceTree = "<group>"; };
 		3FD04EA624F53A160002DE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD04EB224F53A5D0002DE82 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FD04EB424F53A620002DE82 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3FD04EB624F53A7D0002DE82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FD04EB824F53A910002DE82 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		3FD04EBA24F53A9D0002DE82 /* QRcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeViewController.swift; sourceTree = "<group>"; };
+		3FD04EBC24F53AA30002DE82 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FD04EBE24F53AAC0002DE82 /* CellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
+		3FD04EC024F53AB20002DE82 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3FD04EC224F53ABC0002DE82 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		3FD04EC424F53AC30002DE82 /* AddressDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailViewController.swift; sourceTree = "<group>"; };
+		3FD04EC624F53AC80002DE82 /* AddressDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailTableViewCell.swift; sourceTree = "<group>"; };
+		3FD04EC824F53BB50002DE82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3FD04ECA24F54AF40002DE82 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5853BA4011E52A55910E1D68 /* Pods-Knowhom-KnowhomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knowhom-KnowhomUITests.debug.xcconfig"; path = "Target Support Files/Pods-Knowhom-KnowhomUITests/Pods-Knowhom-KnowhomUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		89027696A42EA3AF2EA4CF9E /* Pods-Knowhom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knowhom.debug.xcconfig"; path = "Target Support Files/Pods-Knowhom/Pods-Knowhom.debug.xcconfig"; sourceTree = "<group>"; };
+		9D369450CC432585CF647547 /* Pods-KnowhomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowhomTests.debug.xcconfig"; path = "Target Support Files/Pods-KnowhomTests/Pods-KnowhomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9EEEC855E2B696FC0323845 /* Pods-KnowhomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowhomTests.release.xcconfig"; path = "Target Support Files/Pods-KnowhomTests/Pods-KnowhomTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493B36066D9CED770E052EE0 /* Pods_Knowhom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFC988FE8633A980CAB30DD /* Pods_KnowhomTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4E0CDE5EEC206AF65E87B1 /* Pods_Knowhom_KnowhomUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +116,8 @@
 				3FD04E9824F53A160002DE82 /* KnowhomTests */,
 				3FD04EA324F53A160002DE82 /* KnowhomUITests */,
 				3FD04E8224F53A140002DE82 /* Products */,
+				CA75D0B4FB05DF9914C2DC9A /* Pods */,
+				59F118CC82A7F8BC2FFF9894 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +134,22 @@
 		3FD04E8324F53A140002DE82 /* Knowhom */ = {
 			isa = PBXGroup;
 			children = (
+				3FD04EC824F53BB50002DE82 /* GoogleService-Info.plist */,
 				3FD04E8424F53A140002DE82 /* AppDelegate.swift */,
 				3FD04E8624F53A140002DE82 /* ViewController.swift */,
-				3FD04E8824F53A140002DE82 /* Main.storyboard */,
-				3FD04E8B24F53A160002DE82 /* Assets.xcassets */,
-				3FD04E8D24F53A160002DE82 /* LaunchScreen.storyboard */,
+				3FD04EB824F53A910002DE82 /* SignupViewController.swift */,
+				3FD04EBA24F53A9D0002DE82 /* QRcodeViewController.swift */,
+				3FD04EBC24F53AA30002DE82 /* LoginViewController.swift */,
+				3FD04EC024F53AB20002DE82 /* CameraViewController.swift */,
+				3FD04EC224F53ABC0002DE82 /* AddressViewController.swift */,
+				3FD04EBE24F53AAC0002DE82 /* CellTableViewCell.swift */,
+				3FD04EC424F53AC30002DE82 /* AddressDetailViewController.swift */,
+				3FD04EC624F53AC80002DE82 /* AddressDetailTableViewCell.swift */,
+				3FD04EB224F53A5D0002DE82 /* LaunchScreen.storyboard */,
+				3FD04EB424F53A620002DE82 /* Main.storyboard */,
+				3FD04EB624F53A7D0002DE82 /* Assets.xcassets */,
 				3FD04E9024F53A160002DE82 /* Info.plist */,
+				3FD04ECA24F54AF40002DE82 /* ProfileViewController.swift */,
 			);
 			path = Knowhom;
 			sourceTree = "<group>";
@@ -125,6 +172,29 @@
 			path = KnowhomUITests;
 			sourceTree = "<group>";
 		};
+		59F118CC82A7F8BC2FFF9894 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BFCAF338DD592F7E4CF49C8 /* Pods_Knowhom.framework */,
+				1EFFD509FABDD97133E9C6C2 /* Pods_Knowhom_KnowhomUITests.framework */,
+				1EE653E2462E980E6866E233 /* Pods_KnowhomTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA75D0B4FB05DF9914C2DC9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89027696A42EA3AF2EA4CF9E /* Pods-Knowhom.debug.xcconfig */,
+				06FB1FCA3B04D5DF502685A4 /* Pods-Knowhom.release.xcconfig */,
+				5853BA4011E52A55910E1D68 /* Pods-Knowhom-KnowhomUITests.debug.xcconfig */,
+				1EA52086B4FF846C31ECE5C3 /* Pods-Knowhom-KnowhomUITests.release.xcconfig */,
+				9D369450CC432585CF647547 /* Pods-KnowhomTests.debug.xcconfig */,
+				E9EEEC855E2B696FC0323845 /* Pods-KnowhomTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FD04EA924F53A160002DE82 /* Build configuration list for PBXNativeTarget "Knowhom" */;
 			buildPhases = (
+				ADBF57BA4AD52FC0231519EC /* [CP] Check Pods Manifest.lock */,
 				3FD04E7D24F53A140002DE82 /* Sources */,
 				3FD04E7E24F53A140002DE82 /* Frameworks */,
 				3FD04E7F24F53A140002DE82 /* Resources */,
+				2B6B92E6E78A72C464A7A13D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FD04EAC24F53A160002DE82 /* Build configuration list for PBXNativeTarget "KnowhomTests" */;
 			buildPhases = (
+				13AEBD712395690760C34618 /* [CP] Check Pods Manifest.lock */,
 				3FD04E9124F53A160002DE82 /* Sources */,
 				3FD04E9224F53A160002DE82 /* Frameworks */,
 				3FD04E9324F53A160002DE82 /* Resources */,
@@ -167,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FD04EAF24F53A160002DE82 /* Build configuration list for PBXNativeTarget "KnowhomUITests" */;
 			buildPhases = (
+				46EDE43D4594AB3E310BD7DE /* [CP] Check Pods Manifest.lock */,
 				3FD04E9C24F53A160002DE82 /* Sources */,
 				3FD04E9D24F53A160002DE82 /* Frameworks */,
 				3FD04E9E24F53A160002DE82 /* Resources */,
+				83631BF16932564A86670D9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +304,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD04E8F24F53A160002DE82 /* LaunchScreen.storyboard in Resources */,
-				3FD04E8C24F53A160002DE82 /* Assets.xcassets in Resources */,
-				3FD04E8A24F53A140002DE82 /* Main.storyboard in Resources */,
+				3FD04EB524F53A620002DE82 /* Main.storyboard in Resources */,
+				3FD04EC924F53BB50002DE82 /* GoogleService-Info.plist in Resources */,
+				3FD04EB724F53A7E0002DE82 /* Assets.xcassets in Resources */,
+				3FD04EB324F53A5D0002DE82 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +327,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13AEBD712395690760C34618 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnowhomTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B6B92E6E78A72C464A7A13D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knowhom/Pods-Knowhom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knowhom/Pods-Knowhom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Knowhom/Pods-Knowhom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46EDE43D4594AB3E310BD7DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Knowhom-KnowhomUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83631BF16932564A86670D9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knowhom-KnowhomUITests/Pods-Knowhom-KnowhomUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Knowhom-KnowhomUITests/Pods-Knowhom-KnowhomUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Knowhom-KnowhomUITests/Pods-Knowhom-KnowhomUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBF57BA4AD52FC0231519EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Knowhom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FD04E7D24F53A140002DE82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD04EC724F53AC80002DE82 /* AddressDetailTableViewCell.swift in Sources */,
+				3FD04EB924F53A910002DE82 /* SignupViewController.swift in Sources */,
 				3FD04E8724F53A140002DE82 /* ViewController.swift in Sources */,
+				3FD04EBB24F53A9D0002DE82 /* QRcodeViewController.swift in Sources */,
+				3FD04EC524F53AC30002DE82 /* AddressDetailViewController.swift in Sources */,
+				3FD04EC324F53ABC0002DE82 /* AddressViewController.swift in Sources */,
+				3FD04ECB24F54AF50002DE82 /* ProfileViewController.swift in Sources */,
+				3FD04EBF24F53AAD0002DE82 /* CellTableViewCell.swift in Sources */,
+				3FD04EC124F53AB20002DE82 /* CameraViewController.swift in Sources */,
+				3FD04EBD24F53AA40002DE82 /* LoginViewController.swift in Sources */,
 				3FD04E8524F53A140002DE82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +479,6 @@
 			targetProxy = 3FD04EA124F53A160002DE82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3FD04E8824F53A140002DE82 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FD04E8924F53A140002DE82 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3FD04E8D24F53A160002DE82 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FD04E8E24F53A160002DE82 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3FD04EA724F53A160002DE82 /* Debug */ = {
@@ -430,10 +599,13 @@
 		};
 		3FD04EAA24F53A160002DE82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89027696A42EA3AF2EA4CF9E /* Pods-Knowhom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHH9JJ9K4N;
 				INFOPLIST_FILE = Knowhom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +619,13 @@
 		};
 		3FD04EAB24F53A160002DE82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FB1FCA3B04D5DF502685A4 /* Pods-Knowhom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHH9JJ9K4N;
 				INFOPLIST_FILE = Knowhom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +639,7 @@
 		};
 		3FD04EAD24F53A160002DE82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D369450CC432585CF647547 /* Pods-KnowhomTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +660,7 @@
 		};
 		3FD04EAE24F53A160002DE82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9EEEC855E2B696FC0323845 /* Pods-KnowhomTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +681,7 @@
 		};
 		3FD04EB024F53A160002DE82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5853BA4011E52A55910E1D68 /* Pods-Knowhom-KnowhomUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +701,7 @@
 		};
 		3FD04EB124F53A160002DE82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA52086B4FF846C31ECE5C3 /* Pods-Knowhom-KnowhomUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

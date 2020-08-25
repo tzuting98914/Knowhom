@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>693169099917-72t5le12kfc821i5td9qmv63hcrt2273.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.693169099917-72t5le12kfc821i5td9qmv63hcrt2273</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDVNEofdSZDyn7CE4iirnRe-hrDpMxMDAg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>693169099917</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>knowhom.Knowhom</string>
+	<key>PROJECT_ID</key>
+	<string>knowhom-98f26</string>
+	<key>STORAGE_BUCKET</key>
+	<string>knowhom-98f26.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:693169099917:ios:97ef343232a73baa5c7ec4</string>
+	<key>DATABASE_URL</key>
+	<string>https://knowhom-98f26.firebaseio.com</string>
+</dict>
+</plist>
