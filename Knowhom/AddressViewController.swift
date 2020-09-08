@@ -15,75 +15,63 @@ import FirebaseFirestore
 
 
 class AddressViewController: UIViewController{
-   
+    
     var documentId:[String] = []
     var nameList:[String] = []
     var idList:[String] = []
-    var i = 0
+    var photoList:[String] = []
+    var uidList:[String] = []
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var menubutton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        readData()
+
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        readData()
+        documentId = []
+        nameList = []
+        idList = []
+        photoList = []
+    }
+    
+   
+    
     func readData(){
         let userID = Auth.auth().currentUser?.uid
-        db.collection("user").document(userID!).collection("contact").getDocuments { (querySnapshot, error) in
+        db.collection("user").document(userID!).collection("contact").order(by: "uid", descending: true).getDocuments { (querySnapshot, error) in
             if let querySnapshot = querySnapshot {
                 for document in querySnapshot.documents {
                     self.documentId.append(document.documentID)
                     self.idList.append(document.data()["uid"] as! String)
-                    print("\(self.idList)123")
                 }
-                print(self.idList)
-                
-                
-
-                
-//                for i in 0..<self.documentId.count{
-//
-//                    print("\(self.idList[self.i]):\(self.i)...456")
-//
-//                    db.collection("user").document(self.idList[self.i]).collection("account").getDocuments { (querySnapshot, error) in
-//                        if let querySnapshot = querySnapshot {
-//                            for document in querySnapshot.documents {
-//                                self.nameList.append(document.data()["username"] as! String)
-//                                print(document.data()["username"] as! String)
-//                                self.tableView.reloadData()
-//
-//                            }
-//
-//                        }
-//
-//                    }
-//                    self.i = self.i + 1
-//                }
-                
-            }
-            for i in 0..<self.documentId.count{
-                
-                print("\(self.idList[self.i]):\(self.i)...456")
-                
-                db.collection("alluserdata").document(self.idList[self.i]).getDocument { (document, error) in
-                    if let document = document, document.exists {
-                        self.nameList.append(document.data()?["username"] as! String)
-                        print(self.nameList)
-                        //print(document.documentID, document.data())
-                    } else {
-                        print("Document does not exist")
+                let max = self.idList.count
+                var i = max - 1
+                while(i >= 0){
+                    db.collection("alluserdata").document(self.idList[i]).getDocument { (document, error) in
+                        if let document = document, document.exists {
+                            self.uidList.append(document.data()?["uid"] as! String)
+                            self.nameList.append(document.data()?["username"] as! String)
+                            self.photoList.append(document.data()?["photo"] as! String)
+//                            print(self.uidList)
+//                            print(self.nameList)
+//                            print(self.photoList)
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        } else {
+                            print("Document does not exist")
+                        }
                     }
+                    i -= 1
                 }
-                self.i = self.i + 1
+                
             }
-            print(self.idList)
         }
-        print(self.idList)
     }
-
 }
 
 
@@ -92,24 +80,37 @@ extension AddressViewController: UITableViewDelegate, UITableViewDataSource{
         return 200
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return documentId.count
+        return idList.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "addresscell", for: indexPath) as? CellTableViewCell
         //cell?.lbl.text = "111"
-        //cell?.lbl.text = nameList[indexPath.row]
+        cell?.lbl.text = nameList[indexPath.row]
+        cell?.setPhoto(photoList[indexPath.row])
         
-//        cell?.img.image = UIImage(named: username[indexPath.row])
         return cell!
     }
-
+    
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        if let controller = segue.destination as? AddressDetailViewController, let _ = tableView.indexPathForSelectedRow?.section, let row = tableView.indexPathForSelectedRow?.row {
+    //            controller.id = idList[row]
+    //        }
+    //    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        performSegue(withIdentifier: "AddressDetailViewController", sender: self)
-        let vc = storyboard?.instantiateViewController(withIdentifier: "AddressDetailViewController") as? AddressDetailViewController
-        vc?.id = idList[indexPath.row]
-        self.navigationController?.pushViewController(vc!, animated: true)
+        performSegue(withIdentifier: "transfer", sender: uidList[indexPath.row])
+        
+        //        let vc = storyboard?.instantiateViewController(withIdentifier: "AddressDetailViewController") as? AddressDetailViewController
+        //        vc!.id = idList[indexPath.row]
+        //        navigationController?.pushViewController(vc!, animated: true)
+        //
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let svc = segue.destination as! AddressDetailViewController
+        svc.id = sender as? String
+    }
+    
 }

@@ -13,71 +13,66 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class AddressDetailViewController: UIViewController {
-    var cellData: String?
+    var dataTask: URLSessionDataTask?
+    var userData = UserDefaults.standard.dictionary(forKey: "userData")
+    var fireUploadDic: [String:Any]?
     
+    @IBOutlet weak var photoImg: UIImageView!
+  
     var id: String?
     var SelectedtList:[String] = []
-    var typelist:[String] = ["username","email","phone number","position"]
+    var typelist:[String] = ["username","email","phone number"]
     
-    @IBOutlet weak var addressdetail: UITableView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var phone: UILabel!
+    
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         readData()
     }
     
+    func setPhoto(_ userImageURL: String) {
+        if userImageURL != "none" {
+            let session = URLSession.shared
+            dataTask = session.dataTask(with: URL(string: userImageURL)!, completionHandler: {
+                (data, response, error) in
+                if let error = error {
+                    print("\(error.localizedDescription)")
+                    return
+                } else if let httpResponse = response as? HTTPURLResponse {
+                    // storage 的權限如果沒有打開的話，會出現 403 的錯誤
+                    if httpResponse.statusCode == 200 {
+                        DispatchQueue.main.async() {
+                            if let data = data {
+                                self.photoImg.image = UIImage(data: data)
+                            }
+                        }
+                    }
+                }
+            })
+        }
+        dataTask?.resume()
+    }
+    
     func readData(){
         
-        db.collection("user").document(id!).collection("account").getDocuments { (querySnapshot, error) in
-            if let querySnapshot = querySnapshot {
-                for document in querySnapshot.documents {
-                    self.SelectedtList.append(document.data()["username"] as! String)
-                    self.SelectedtList.append(document.data()["email"] as! String)
-                    self.SelectedtList.append(document.data()["phone"] as! String)
-                    //print(self.SelectedtList)
-                }
-                DispatchQueue.main.async {
-                    self.addressdetail.reloadData()
-                }
-            }else{
-                print("not exist")
+        db.collection("alluserdata").document(id!).getDocument { (document, error) in
+            if let document = document, document.exists {
+                self.name.text = document.data()?["username"] as? String
+                self.email.text = document.data()?["email"] as? String
+                self.phone.text = document.data()?["phone"] as? String
+                self.setPhoto(document.data()?["photo"] as! String)
+                //print(document.documentID, document.data())
+                
+            } else {
+                print("Document does not exist")
             }
         }
-        
-//        let userID = Auth.auth().currentUser?.uid
-//    db.collection("user").document(userID!).collection("contact").document(id!).getDocument { (document, error) in
-//            if let document = document, document.exists{
-//                self.SelectedtList.append(document.data()!["username"] as! String)
-//                self.SelectedtList.append(document.data()!["email"] as! String)
-//                self.SelectedtList.append(document.data()!["phone"] as! String)
-//                //print(self.SelectedtList)
-//
-//                DispatchQueue.main.async {
-//                    self.addressdetail.reloadData()
-//                }
-//            }else{
-//                print("not exist")
-//            }
-//        }
-        
-    }
-}
-
-
-
-extension AddressDetailViewController: UITableViewDelegate, UITableViewDataSource{
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SelectedtList.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "addressdetailcell", for: indexPath) as? AddressDetailTableViewCell
-        cell?.value.text = SelectedtList[indexPath.row]
-        cell?.type.text = typelist[indexPath.row]
-        return cell!
-    }
 }

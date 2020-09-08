@@ -29,6 +29,8 @@ class SignupViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     
     var urlString: String!
 
+    var index: Int!
+    var docList:Array<String> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,14 +94,11 @@ class SignupViewController: UIViewController, UITextFieldDelegate, UIImagePicker
                     return
                 }
                 self.urlString = url.absoluteString
-                //print(self.urlString)
+                print(self.urlString)
             })
         }
         imagepicker.dismiss(animated: true, completion: nil)
     }
-    
-
-    
     
     @objc func dismissKeyBoard(){
         self.view.endEditing(true)
@@ -179,24 +178,19 @@ class SignupViewController: UIViewController, UITextFieldDelegate, UIImagePicker
                 }
                 else{
                     //create successfully
-
-                db.collection("user").document(result!.user.uid).collection("account").addDocument(data: ["uid":result!.user.uid,"username":username,"phone":phonenumber, "email": email,"photo": self.urlString]){
+                 
+                    
+                    db.collection("user").document(result!.user.uid).collection("account").addDocument(data: ["uid":result!.user.uid,"username":username,"phone":phonenumber, "email": email,"photo": self.urlString,"CreationDate":Auth.auth().currentUser?.metadata.creationDate as Any]){
                     (error) in
                         if error != nil{
                            self.showerror("error!!!!!!!!!")
                         }
-
                     }
-                db.collection("alluserdata").document(result!.user.uid).setData(["uid":result!.user.uid,"username":username,"phone":phonenumber, "email": email,"photo": self.urlString], merge: true)
+                db.collection("alluserdata").document(result!.user.uid).setData(["uid":result!.user.uid,"username":username,"phone":phonenumber, "email": email,"photo": self.urlString,"CreationDate":Auth.auth().currentUser?.metadata.creationDate as Any], merge: true)
                     //Go to the HomeViewController if the login is sucessful
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "home")
                     self.present(vc!, animated: true, completion: nil)
-                    
-//                    db.collection("user").addDocument(data: ["phonenumber":phonenumber, "email": email]){ (error) in
-//                        if error != nil{
-//                            self.showerror("error")
-//                        }
-//                    }
+
  
                 }
             }

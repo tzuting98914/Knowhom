@@ -41,6 +41,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var addemail = ""
     var addphoto = ""
     var addphone = ""
+    var contactId:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,21 +74,14 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                     view.addSubview(qrCodeFrameView)
                     view.bringSubviewToFront(qrCodeFrameView)
                 }
-                
             }
             catch{
                 print("error")
             }
-            
-
-           
-            
-            
-            
         }
-        
-       
     }
+    
+
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         // 檢查  metadataObjects 陣列為非空值，它至少需包含一個物件
@@ -104,30 +98,25 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             // 倘若發現的元資料與 QR code 元資料相同，便更新狀態標籤的文字並設定邊界
             let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
             qrCodeFrameView?.frame = barCodeObject!.bounds
-            
             getqr = metadataObj.stringValue as! String
-
-            if getqr.hasPrefix("abc"){
-                let id = NSString(string:getqr)
-                addid = id.substring(from: 3)
-                db.collection("user").document(addid).collection("account").getDocuments { (querySnapshot, error) in
-                    if let querySnapshot = querySnapshot {
-                        for document in querySnapshot.documents {
-                            self.addphoto = document.data()["photo"] as! String
-                            //self.qrcodeimg.image = UIImage(data: imgurl)
-                            self.setPhoto(self.addphoto)
-                        }
+            let id = NSString(string:getqr)
+            addid = id.substring(from: 3)
+            
+            if getqr.hasPrefix("knowhom"){
+                
+                db.collection("alluserdata").document(addid).getDocument { (document, error) in
+                    if let document = document, document.exists {
+                        self.addphoto = document.data()?["photo"] as! String
+                        self.setPhoto(self.addphoto)
+                    }
+                    else{
+                        print("Document does not exist")
                     }
                 }
                 outputText.text = metadataObj.stringValue
                 self.view.addSubview(addFriendView)
                 addFriendView.center = self.view.center
-
             }
-            
-//            if metadataObj.stringValue != nil {
-//                outputText.text = metadataObj.stringValue
-//            }
         }
     }
     
@@ -140,6 +129,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 print("No add QAQ")
             }
         }
+        
         self.addFriendView.removeFromSuperview()
     }
     

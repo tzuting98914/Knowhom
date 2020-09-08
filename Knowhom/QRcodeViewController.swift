@@ -26,6 +26,7 @@ class QRcodeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         generateQRcode()
         
     }
@@ -39,7 +40,7 @@ class QRcodeViewController: UIViewController{
                 return
             }
             
-            let qrdata = "abc\(userID!)"
+            let qrdata = "knowhom\(userID!)"
             
             let data = qrdata.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
             

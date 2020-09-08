@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DFC988FE8633A980CAB30DD /* Pods_KnowhomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE653E2462E980E6866E233 /* Pods_KnowhomTests.framework */; };
+		3F39DC3124FA98E3007EE59A /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39DC3024FA98E2007EE59A /* EditViewController.swift */; };
 		3FD04E8524F53A140002DE82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04E8424F53A140002DE82 /* AppDelegate.swift */; };
 		3FD04E8724F53A140002DE82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04E8624F53A140002DE82 /* ViewController.swift */; };
 		3FD04E9A24F53A160002DE82 /* KnowhomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04E9924F53A160002DE82 /* KnowhomTests.swift */; };
@@ -25,6 +26,9 @@
 		3FD04EC724F53AC80002DE82 /* AddressDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04EC624F53AC80002DE82 /* AddressDetailTableViewCell.swift */; };
 		3FD04EC924F53BB50002DE82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FD04EC824F53BB50002DE82 /* GoogleService-Info.plist */; };
 		3FD04ECB24F54AF50002DE82 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04ECA24F54AF40002DE82 /* ProfileViewController.swift */; };
+		3FD04ECD24F644E10002DE82 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04ECC24F644E00002DE82 /* ProfileTableViewCell.swift */; };
+		3FD04ECF24F7959D0002DE82 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04ECE24F7959D0002DE82 /* EditProfileViewController.swift */; };
+		3FD04ED124F916930002DE82 /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD04ED024F916920002DE82 /* EditProfileTableViewCell.swift */; };
 		493B36066D9CED770E052EE0 /* Pods_Knowhom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFCAF338DD592F7E4CF49C8 /* Pods_Knowhom.framework */; };
 		4A4E0CDE5EEC206AF65E87B1 /* Pods_Knowhom_KnowhomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFFD509FABDD97133E9C6C2 /* Pods_Knowhom_KnowhomUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +56,7 @@
 		1EE653E2462E980E6866E233 /* Pods_KnowhomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowhomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EFFD509FABDD97133E9C6C2 /* Pods_Knowhom_KnowhomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knowhom_KnowhomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFCAF338DD592F7E4CF49C8 /* Pods_Knowhom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knowhom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F39DC3024FA98E2007EE59A /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		3FD04E8124F53A140002DE82 /* Knowhom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knowhom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD04E8424F53A140002DE82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD04E8624F53A140002DE82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +80,9 @@
 		3FD04EC624F53AC80002DE82 /* AddressDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailTableViewCell.swift; sourceTree = "<group>"; };
 		3FD04EC824F53BB50002DE82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FD04ECA24F54AF40002DE82 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3FD04ECC24F644E00002DE82 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		3FD04ECE24F7959D0002DE82 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		3FD04ED024F916920002DE82 /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		5853BA4011E52A55910E1D68 /* Pods-Knowhom-KnowhomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knowhom-KnowhomUITests.debug.xcconfig"; path = "Target Support Files/Pods-Knowhom-KnowhomUITests/Pods-Knowhom-KnowhomUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89027696A42EA3AF2EA4CF9E /* Pods-Knowhom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knowhom.debug.xcconfig"; path = "Target Support Files/Pods-Knowhom/Pods-Knowhom.debug.xcconfig"; sourceTree = "<group>"; };
 		9D369450CC432585CF647547 /* Pods-KnowhomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowhomTests.debug.xcconfig"; path = "Target Support Files/Pods-KnowhomTests/Pods-KnowhomTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				3FD04EC824F53BB50002DE82 /* GoogleService-Info.plist */,
+				3FD04EB224F53A5D0002DE82 /* LaunchScreen.storyboard */,
 				3FD04E8424F53A140002DE82 /* AppDelegate.swift */,
 				3FD04E8624F53A140002DE82 /* ViewController.swift */,
 				3FD04EB824F53A910002DE82 /* SignupViewController.swift */,
@@ -144,12 +153,15 @@
 				3FD04EC224F53ABC0002DE82 /* AddressViewController.swift */,
 				3FD04EBE24F53AAC0002DE82 /* CellTableViewCell.swift */,
 				3FD04EC424F53AC30002DE82 /* AddressDetailViewController.swift */,
-				3FD04EC624F53AC80002DE82 /* AddressDetailTableViewCell.swift */,
-				3FD04EB224F53A5D0002DE82 /* LaunchScreen.storyboard */,
-				3FD04EB424F53A620002DE82 /* Main.storyboard */,
+				3FD04ECA24F54AF40002DE82 /* ProfileViewController.swift */,
+				3F39DC3024FA98E2007EE59A /* EditViewController.swift */,
 				3FD04EB624F53A7D0002DE82 /* Assets.xcassets */,
 				3FD04E9024F53A160002DE82 /* Info.plist */,
-				3FD04ECA24F54AF40002DE82 /* ProfileViewController.swift */,
+				3FD04EB424F53A620002DE82 /* Main.storyboard */,
+				3FD04ECE24F7959D0002DE82 /* EditProfileViewController.swift */,
+				3FD04EC624F53AC80002DE82 /* AddressDetailTableViewCell.swift */,
+				3FD04ECC24F644E00002DE82 /* ProfileTableViewCell.swift */,
+				3FD04ED024F916920002DE82 /* EditProfileTableViewCell.swift */,
 			);
 			path = Knowhom;
 			sourceTree = "<group>";
@@ -435,15 +447,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD04ECF24F7959D0002DE82 /* EditProfileViewController.swift in Sources */,
 				3FD04EC724F53AC80002DE82 /* AddressDetailTableViewCell.swift in Sources */,
 				3FD04EB924F53A910002DE82 /* SignupViewController.swift in Sources */,
 				3FD04E8724F53A140002DE82 /* ViewController.swift in Sources */,
 				3FD04EBB24F53A9D0002DE82 /* QRcodeViewController.swift in Sources */,
+				3F39DC3124FA98E3007EE59A /* EditViewController.swift in Sources */,
 				3FD04EC524F53AC30002DE82 /* AddressDetailViewController.swift in Sources */,
 				3FD04EC324F53ABC0002DE82 /* AddressViewController.swift in Sources */,
 				3FD04ECB24F54AF50002DE82 /* ProfileViewController.swift in Sources */,
 				3FD04EBF24F53AAD0002DE82 /* CellTableViewCell.swift in Sources */,
+				3FD04ED124F916930002DE82 /* EditProfileTableViewCell.swift in Sources */,
 				3FD04EC124F53AB20002DE82 /* CameraViewController.swift in Sources */,
+				3FD04ECD24F644E10002DE82 /* ProfileTableViewCell.swift in Sources */,
 				3FD04EBD24F53AA40002DE82 /* LoginViewController.swift in Sources */,
 				3FD04E8524F53A140002DE82 /* AppDelegate.swift in Sources */,
 			);
